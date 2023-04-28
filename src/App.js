@@ -1,13 +1,10 @@
-import picture from './pictures.jpg';
 import './App.css';
 
 function App() {
+  const date=new Date()
   return (
-    <div >
-        <h1 className="App">Vishnu Loves Visalini</h1>
-        <div className="picture">
-        <img src={picture} alt="vishnu" style={{"width":"50%"}}/>
-        </div>
+    <div className="App">
+        <h1>Time is</h1>{date.toLocaleString()}
     </div>
   );
 }
